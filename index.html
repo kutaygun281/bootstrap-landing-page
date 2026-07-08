@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .card {
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container sticky-top">
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-0-circle" viewBox="0 0 16 16">
+                    <path
+                        d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895" />
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+                </svg>
+                <a class="navbar-brand text-white ms-3" href="#">Lorem</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Sections
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#home">About</a></li>
+                                <li><a class="dropdown-item" href="#services">Services</a></li>
+                                <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section>
+            <div id="home" class="container vh-100 bg-light">
+                <div class="row h-100 align-items-center">
+                    <div class="col-md-6">
+                        <h1 class="text-black text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </h1>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary ms-8" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                Lorem, ipsum.
+                            </button>
+                        </div>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Lorem, ipsum.</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, modi. Tempora
+                                    enim, quod ipsum consequatur suscipit modi quidem eius corrupti repudiandae sunt
+                                    optio ab, commodi vel voluptas labore numquam nobis deleniti esse. Consequuntur vel
+                                    dolor suscipit exercitationem nisi quibusdam animi accusamus error corporis,
+                                    deserunt provident. Sunt placeat obcaecati sit ea!
+                                </div>
+                                <div class="dropdown mt-3">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown">
+                                        Menu
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <img src="figure1.png" class="img-fluid" style="max-height: 300px; max-width: 350px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" style="scroll-margin-top: 80px;">
+            <div class="container my-5">
+                <div class="row g-1">
+                    <h1>Services</h1>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100 bg-light" style="width: 18rem;">
+                            <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                                <p class="card-text"> Lorem ipsum dolor amet consectetur sit, amet consectetur
+                                    adipisicing elit. Laborum corrupti amet consectetur soluta unde rem mollitia eum
+                                    facere pariatur a. Minima ut iste error impedit obcaecati sequi, totam iure ratione
+                                    et ipsa soluta repudiandae voluptate, nisi facere officiis praesentium dolore.
+                                    <button type="button" class="btn btn-primary" id="liveToastBtn">Lorem
+                                        toast</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100 bg-light" style="width: 18rem;">
+                            <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem, ipsum.</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing consectetur
+                                    adipisicing elit. Error voluptates nam non quia repellat, maxime modi veritatis
+                                    sunt? Autem sed officia obcaecati eligendi nisi illum molestias voluptatem tenetur,
+                                    debitis ut saepe? Ipsum est non harum nostrum nesciunt soluta?</p>
+                                <button type="button" class="btn btn-primary" id="liveToastBtn2">Lorem
+                                    toast</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100 bg-light" style="width: 18rem;">
+                            <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem, ipsum.</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                                    repellat, accusantium animi ipsam dolores laudantium consequatur iste quaerat rem
+                                    porro eveniet expedita deleniti sunt, aspernatur, asperiores impedit. Eum neque,
+                                    beatae reiciendis a nesciunt officia sunt.</p>
+                                <button type="button" class="btn btn-primary" id="liveToastBtn3">Lorem
+                                    toast</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="faq" class="min-vh-100 d-flex align-items-center">
+            <div class="container">
+                <div>
+                    <h1>Frequently Asked Questions</h1>
+                </div>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Question #1
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum..</strong>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laboriosam beatae
+                                unde tempore expedita natus suscipit. Commodi consectetur dolorum, facilis earum
+                                temporibus expedita sequi repellendus provident, ullam consequuntur tempora voluptas
+                                vero dolore voluptatibus sunt repudiandae rerum obcaecati maiores quo at explicabo
+                                omnis. Soluta vitae in corrupti laborum illum eos, tempora necessitatibus, sed non
+                                architecto ex recusandae officiis quisquam explicabo, a exercitationem aliquid
+                                laudantium nulla iste optio hic obcaecati incidunt vel? Ab modi hic maxime eligendi
+                                ducimus voluptatem nobis quos accusamus?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Questiın #2
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</strong> Lorem ipsum
+                                dolor sit amet consectetur, adipisicing elit. Exercitationem, obcaecati sit doloremque
+                                accusamus, optio quia cupiditate ex blanditiis explicabo fugit minima atque quis
+                                accusantium impedit quidem corrupti ipsam saepe dolorem, aut nesciunt. Ullam ducimus
+                                non, exercitationem tempora aliquid officiis a quae soluta ex eaque itaque est quaerat
+                                explicabo sint nobis eos. Necessitatibus voluptate obcaecati ratione quibusdam
+                                aspernatur! Magnam impedit possimus commodi ab, aspernatur et iure eos nemo labore
+                                quisquam, in neque, minus cupiditate maxime natus iste voluptatibus? Eius, tempore
+                                eaque?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Question #3
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Officiis dignissimos maiores delectus iure
+                                magnam atque ad sed praesentium quo quasi tempora fuga necessitatibus, similique magni
+                                doloribus alias laborum, velit commodi recusandae? Ab voluptatem tempore sint deleniti!
+                                Vitae facilis qui ullam quisquam earum delectus, animi similique maxime quia voluptas
+                                praesentium tempora nisi molestias eveniet tempore doloremque adipisci placeat iure
+                                veritatis voluptates atque! Et minus repudiandae facilis, ratione omnis ea aliquam.
+                                Impedit laborum iure totam sit soluta non eum vero praesentium harum!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="contact" class="min-vh-100 d-flex align-items-center bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-md-6 mb-5 mb-md-0">
+                        <h2>Get our newsletter</h2>
+                        <h3>Subscribe to our newsletter and stay updated!</h3>
+                    </div>
+
+                    <div class="col-md-6 mb-5 mb-md-0">
+
+                        <form id="newsletterForm">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                                    required>
+                                <label for="email">Email address</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                Subscribe
+                            </button>
+                        </form>
+
+
+                        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Subscription</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Subscribed
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-4 bg-primary container">
+        <div class="container">
+            <div class="d-flex
+            flex-column
+            flex-md-row
+            justify-content-center
+            align-items-center
+            gap-3">
+                <a href="#"
+                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Lorem</a>
+                </p>
+                | <a href="#"
+                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">İpsum</a>
+                </p>
+                | <a href="#"
+                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">dolor</a>
+                </p>
+                | <a href="#"
+                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">sit
+                    amet</a></p>
+                | <a href="#"
+                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">consectetur</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing.
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing.
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast3" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+
+        </script>
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+        const toastTrigger2 = document.getElementById('liveToastBtn2')
+        const toastLiveExample2 = document.getElementById('liveToast2')
+
+        if (toastTrigger2) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample2)
+            toastTrigger2.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+        const toastTrigger3 = document.getElementById('liveToastBtn3')
+        const toastLiveExample3 = document.getElementById('liveToast3')
+
+        if (toastTrigger2) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample3)
+            toastTrigger3.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+
+        const form = document.getElementById("newsletterForm");
+        const modal = new bootstrap.Modal(document.getElementById("successModal"));
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            if (form.checkValidity()) {
+                modal.show();
+                form.reset();
+            } else {
+                form.reportValidity();
+            }
+        });
+
+    </script>
+</body>
+
+</html>
