@@ -12,7 +12,7 @@ A responsive landing page built with HTML5, CSS3, and Bootstrap 5.
 - Newsletter form with HTML validation
 - Toast notifications
 - Bootstrap modal
-- Responsive footer
+- Responsive design
 
 ## Technologies
 
